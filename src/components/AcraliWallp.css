@@ -1,0 +1,66 @@
+.row.row-large {
+    max-width: 100%;
+}
+@media screen and (min-width: 850px){
+    .row-large {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.gallery, .row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+@media screen and (min-width: 850px){
+    .large-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 550px){
+    .medium-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+.small-12, .small-columns-1 .flickity-slider>.col, .small-columns-1>.col {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col, .columns, .gallery-item {
+    margin: 0;
+    padding: 0 15px 30px;
+    position: relative;
+    width: 100%;
+}
+.row{
+    display: flex;
+
+}
+.textsec{
+    background-color: rgb(9, 8, 8);
+    color: white;
+    height: 700px;
+    padding: 30px;
+}
+.Mountains{
+    height: 600px;
+    width: 650px;
+   
+    padding: 20px;
+
+}
+.text-center{
+    padding-top: 20%;
+    font-size: 25px;
+  
+}
+.textsec2{
+    background-color:grey ;
+    color: black;
+    height: 700px;
+    padding: 30px;
+}

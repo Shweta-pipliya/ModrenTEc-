@@ -1,0 +1,330 @@
+.container-fluid {
+  width: 100%;
+  height: 6rem;
+  display: grid;
+ padding: 0 20px 0 20px;
+  background-color: white;
+}
+.container-nav{
+  display: flex;
+  height: 3rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 4fr 3fr 5rem;
+  background-color: rgb(237, 234, 236);
+  box-shadow:1px 2px #e7dddd;
+}
+.menu{
+  width: 100px;
+
+  
+}
+.nav-item{
+  float: right;
+}
+
+.logo {
+  margin-right: 525px;
+  display: grid;
+  grid-column: 3/4;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mainu-option {
+  display: grid;
+  grid-column: 3/4;
+}
+.mainu-option ul {
+  height: 6rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.mainu-option ul li {
+  align-items: right;
+}
+.nav-link {
+  font-size: 35px;
+  
+}
+.carousel-item {
+  height: 350px;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  font-size: 33px;
+  color: red;
+  margin-right: 22px;
+}
+  
+.a {
+  color: black;
+}
+.menu {
+  display: none;
+  /* padding-top: 28px; */
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  font-size: 25px;
+  text-align: end;
+}
+.option{
+  color: #4b525c;
+}
+.nav-option{
+  display: flex;
+  color: black;
+  font-size: 18px;
+  margin: 10px;
+
+}
+.nav-option .nav-link{
+  color: black;
+}
+@media (max-width: 1080px) {
+  .container-fluid {
+    height: 5rem;
+    grid-template-columns: 0.3fr 0.2fr 1fr;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+
+@media (max-width: 998px) {
+  .container-fluid {
+    height: 5rem;
+  }
+  .mainu-option {
+    display: none;
+    grid-row: 1/2;
+  }
+  .menu {
+    display: block;
+    height: 2rem;
+    display: none;
+  }
+  .mobile-mainu-option {
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+  }
+  .mainu-option mobile-mainu-option {
+    background-color: white;
+    height: 20rem;
+    direction: Grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 2s linear;
+    transform-origin: top;
+  }
+  .mobile-mainu-option ul {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+  }
+  .mobile-mainu-option ul li:first-child {
+    transition-delay: 0.2s;
+  }
+}
+
+.side_bar{
+  overflow-y: scroll;
+}
+.off-canvas .mobile-sidebar-slide .sidebar-menu {
+  height: 100%;
+  padding-bottom: 0;
+  padding-top: 0;
+  transform: translateX(0);
+  transition: transform .3s;
+  will-change: transform;
+}
+.nav.nav-vertical {
+  flex-flow: column;
+}
+.nav-slide {
+  -webkit-overflow-scrolling: auto;
+  height: 100%;
+  overflow: visible;
+  overflow-y: auto;
+  padding-top: 20px;
+  margin: 20px;
+}
+img{
+  margin-right: 15px;
+}
+.nav.nav-vertical li {
+  list-style: none;
+  margin: 5px;
+  width: 100%;
+}
+.nav li:first-child {
+  margin-left: 5px;
+}
+.nav-vertical>li {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+.nav-slide>li {
+  flex-shrink: 0;
+}
+.off-canvas:not(.off-canvas-center) .nav-vertical li>a {
+  padding-left: 20px;
+}
+.off-canvas .nav-vertical>li>a {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.nav-uppercase>li>a {
+  text-transform: inherit;
+}
+.nav>li>a, .mobile-sidebar-levels-2 .nav>li>ul>li>a {
+  font-weight: 400;
+  font-style: normal;
+}
+.nav>li>a {
+  font-family: Roboto,sans-serif;
+}
+.nav>li>a {
+  font-size: 13px;
+}
+.nav-vertical>li>a, .nav-vertical>li>ul>li a {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  width: auto;
+}
+.nav-uppercase>li>a {
+  font-weight: bolder;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+.nav-column>li>a, .nav-dropdown>li>a, .nav-vertical-fly-out>li>a, .nav>li>a {
+  color: black;
+  transition: all .2s;
+}
+
+.nav>li>a {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 13px 6px;
+}
+
+
+
+/* Navbar.css */
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 12;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  background-color: rgb(227, 14, 14);
+  padding: 20px;
+  
+}
+
+
+.modal {
+  position: fixed;
+  /* Other styles */
+}
+.modal {
+  display: block;
+  /* Other styles */
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}

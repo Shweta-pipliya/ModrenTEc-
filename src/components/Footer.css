@@ -1,0 +1,35 @@
+.main-footer{
+    color: white;
+    background-color: #174954;
+    width: 100%;
+    padding-top: 3rem;
+    border: 0;
+    position: relative;
+}
+.row{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+   
+    
+}
+.w-icon{
+    display: flex;
+    color: #5CF939;
+    font-size: 55px;
+    align-items: center;
+    justify-self: center;
+}
+.line{
+    opacity: 29.25;
+    border: 1px solid rgb(209, 202, 202);
+    width: 10%;
+}
+.first-list{
+
+    display: grid;
+    list-style-type: none;
+    align-items: start;
+    justify-content: start;
+
+}
